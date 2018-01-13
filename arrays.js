@@ -24,6 +24,20 @@ function accessElementInArray (arr, index) {
   return arr[index]
 }
 
-destructivelyRemoveElementFromBeginningOfArray (arr) {
+function destructivelyRemoveElementFromBeginningOfArray (arr) {
   return arr.unshift
 }
+
+function removeElementFromBeginningOfArray (arr) {
+  var newArray = arr.slice(1)
+  return newArray
+}
+
+function destructivelyRemoveElementFromEndOfArray (arr) {
+  return arr.pop()
+}
+
+function removeElementFromEndofArray (arr) {
+  return arr.slice(0, arr.length)
+}
+
